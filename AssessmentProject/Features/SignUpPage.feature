@@ -1,4 +1,5 @@
 ﻿Feature: SignUpPage
+ Check the functionality of signup page
 	
 
 Scenario: Verify the functionality of English language dropdown

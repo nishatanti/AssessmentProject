@@ -21,4 +21,8 @@
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.74" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Screenshot\" />
+  </ItemGroup>
+
 </Project>

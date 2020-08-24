@@ -11,8 +11,7 @@ namespace AssessmentProject.Utility
 {
     [Binding]
     public sealed class Hooks1
-    {
-        //IWebDriver _driver;
+    {      
         private readonly IObjectContainer _objectcontainer;
 
         private IWebDriver _driver;
@@ -28,7 +27,6 @@ namespace AssessmentProject.Utility
         {
             Console.WriteLine("LAUNCH URL");
             ChromeOptions options = new ChromeOptions();
-            //options.EnableMobileEmulation(deviceName);
             options.AddArgument("no-sandbox");
 
             ChromeDriver _driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));

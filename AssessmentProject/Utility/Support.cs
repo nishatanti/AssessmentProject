@@ -44,20 +44,20 @@ namespace AssessmentProject.Utility
             ITakesScreenshot screenshotDriver = driver as ITakesScreenshot;
             Screenshot
                 screenshot = screenshotDriver.GetScreenshot();
-            screenshot.SaveAsFile("D://specflow project//practiceproject//FBlogin2//Screenshot//TEST.png", ScreenshotImageFormat.Png);
-            
+            screenshot.SaveAsFile("C: //Users//test//source//repos//AssessmentProject//AssessmentProject//Screenshot//TEST.png", ScreenshotImageFormat.Png);
 
+        
         }
 
-        public void EncodingPassword()
-        {
-            string password = "Welcome@123";
-            var passwordInBytes = Encoding.UTF8.GetBytes(password);
-            string encodedPassword = Convert.ToBase64String(passwordInBytes);
-            Console.WriteLine(encodedPassword);
-            //Console.WriteLine("Encoded password is : " + encodedPassword);
-            //Console.ReadLine();
+        //public void EncodingPassword()
+        //{
+        //    string password = "Welcome@123";
+        //    var passwordInBytes = Encoding.UTF8.GetBytes(password);
+        //    string encodedPassword = Convert.ToBase64String(passwordInBytes);
+        //    Console.WriteLine(encodedPassword);
+        //    //Console.WriteLine("Encoded password is : " + encodedPassword);
+        //    //Console.ReadLine();
 
-        }
+        //}
     }
 }

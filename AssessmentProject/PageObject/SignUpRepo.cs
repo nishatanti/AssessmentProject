@@ -8,20 +8,16 @@ using System.Text;
 namespace AssessmentProject.PageObject
 {
     class SignUpRepo
-    {
-        
+    {       
         private IWebDriver _driver;
         Support supp = new Support();
 
         public SignUpRepo(IWebDriver driver)
-        {
-            
+        {           
             PageFactory.InitElements(driver, this);
             this._driver = driver;
         }
-
-        
-        
+     
         [FindsBy(How = How.XPath, Using = "//div[@id='language']")]
         public IWebElement SelectLanguage { get; set; }
         public void Language()
@@ -112,10 +108,9 @@ namespace AssessmentProject.PageObject
         public IWebElement Yahoopwd { get; set; }
         public void yahoopwd()
         {
-            //supp.EncodingPassword();
-            //Yahoopwd.SendKeys("encodedPassword");
+            //supp.EncodingPassword(); //Yahoopwd.SendKeys("encodedPassword");
             Yahoopwd.SendKeys("Welcome@123");
-            //V2VsY29tZUAxMjM =
+           
         }
 
         [FindsBy(How = How.Name, Using = "verifyPassword")]
@@ -126,6 +121,5 @@ namespace AssessmentProject.PageObject
             VerifyPwd.Click();
         }
     }
-
    
 }

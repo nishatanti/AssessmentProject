@@ -14,7 +14,7 @@ namespace AssessmentProject
     [Binding]
     public sealed class SignUpSteps
     {
-        //IWebDriver _driver;
+        
         private IWebDriver _driver;
         SignUpRepo signup ;
         Support supp = new Support();
@@ -30,7 +30,7 @@ namespace AssessmentProject
         [Given(@"User is on Signup Page")]
         public void GivenUserIsOnSignupPage()
         {
-            //signup = new SignUpRepo(_driver);
+           
             _driver.Navigate().GoToUrl("http://jt-dev.azurewebsites.net/#/SignUp");
             //_driver.Manage().Window.Maximize();
         }
